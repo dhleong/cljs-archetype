@@ -1,7 +1,22 @@
 ;; shadow-cljs configuration
-{:lein true
+{:dev-http {8080 "public"}
 
- :dev-http {8080 "public"}
+ :source-paths ["src/main" "src/test"]
+
+ :dependencies [; core:
+                [reagent "0.8.1"]
+                [re-frame "0.10.7"]
+
+                ; navigation:
+                [clj-commons/secretary "1.2.4"]
+                [kibu/pushy "0.3.8"]
+
+                ; util:
+                [com.cemerick/url "0.1.1"]
+
+                ; dev tools:
+                [cider/cider-nrepl "0.21.0"]
+                [refactor-nrepl "2.4.0"]]
 
  :builds {:app {:target :browser
                 :output-dir "public/js"

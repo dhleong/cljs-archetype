@@ -6,7 +6,6 @@
     data
 
     "README.md"
-    "project.clj"
     "shadow-cljs.edn"
     "public/index.html"
     [".gitignore" "gitignore"]
