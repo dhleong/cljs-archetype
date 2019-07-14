@@ -5,7 +5,9 @@
   (->files
     data
 
+    "karma.conf.js"
     "README.md"
+    "package.json"
     "shadow-cljs.edn"
     "public/index.html"
     [".gitignore" "gitignore"]
