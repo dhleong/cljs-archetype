@@ -1,5 +1,6 @@
 (ns {{ns-name}}.views.error-boundary
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [{{ns-name}}.util :refer-macros [fn-click]]))
 
 (when goog.DEBUG
   ; in debug builds, we can auto-retry rendering error'd components
@@ -32,9 +33,13 @@
                                         (reset! err error))}
 
        :reagent-render (fn [& children]
-                         (if-let [err @err]
+                         (if-let [e @err]
                            [:div.error
                             [:h1 "Oops! Something went wrong"]
+                            [:div [:a {:href "#"
+                                       :on-click (fn-click
+                                                   (reset! err nil))}
+                                   "Try again"]]
                             [:pre (if (ex-message e)
                                     (.-stack e)
                                     (str e))]]
