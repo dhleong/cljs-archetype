@@ -1,6 +1,6 @@
 (ns {{ns-name}}.fx
   (:require [re-frame.core :refer [reg-fx]]
-            [{{ns-name}}.util.nav :as nav]))
+            [archetype.nav :as nav]))
 
 (reg-fx
   :nav/replace!

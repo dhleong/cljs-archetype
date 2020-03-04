@@ -19,8 +19,5 @@
     [:main "fx.cljs"]
     [:main "routes.cljs"]
     [:main "subs.cljs"]
-    [:main "util.cljs"]
     [:main "views.cljs"]
-    [:main "util/nav.cljs"]
-    [:main "views/error_boundary.cljs"]
     [:main "views/home.cljs"]))

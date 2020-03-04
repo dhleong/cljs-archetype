@@ -1,7 +1,7 @@
 (ns {{ns-name}}.routes
   (:require-macros [secretary.core :refer [defroute]])
   (:require [secretary.core :as secretary]
-            [{{ns-name}}.util.nav :as nav :refer [navigate!]]))
+            [archetype.nav :as nav :refer [navigate!]]))
 
 (defn- def-routes []
   (secretary/reset-routes!)

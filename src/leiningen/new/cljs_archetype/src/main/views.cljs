@@ -1,6 +1,6 @@
 (ns {{ns-name}}.views
-  (:require [{{ns-name}}.util :refer [<sub]]
-            [{{ns-name}}.views.error-boundary :refer [error-boundary]]
+  (:require [archetype.views.error-boundary :refer [error-boundary]]
+            [archetype.util :refer [<sub]]
             [{{ns-name}}.views.home :as home]))
 
 (def ^:private pages

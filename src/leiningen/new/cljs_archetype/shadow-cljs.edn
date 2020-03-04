@@ -6,10 +6,7 @@
  :dependencies [; core:
                 [reagent "0.9.1"]
                 [re-frame "0.11.0"]
-
-                ; navigation:
-                [clj-commons/secretary "1.2.4"]
-                [kibu/pushy "0.3.8"]
+                [net.dhleong/archetype "0.1.0-SNAPSHOT"]
 
                 ; style:
                 [net.dhleong/spade "1.0.3"]
