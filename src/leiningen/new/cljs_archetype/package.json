@@ -19,6 +19,10 @@
     "react-highlight.js": "^1.0.7"
   },
   "scripts": {
+    "lint": "clojure -Sdeps '{:deps {clj-kondo {:mvn/version \"RELEASE\"}}}' -m clj-kondo.main --lint src --config .clj-kondo/config.edn",
+    "lint:init": "clojure -Sdeps '{:deps {clj-kondo {:mvn/version \"RELEASE\"}}}' -m clj-kondo.main --lint \"$(shadow-cljs classpath)\" --config .clj-kondo/config.edn",
+
+    "build": "shadow-cljs release :app",
     "dev": "shadow-cljs start && shadow-cljs watch :app",
     "stop": "shadow-cljs stop",
     "test": "shadow-cljs compile ci && karma start --single-run"
