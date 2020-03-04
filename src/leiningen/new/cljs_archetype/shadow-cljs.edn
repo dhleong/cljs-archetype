@@ -18,8 +18,8 @@
                 [com.cemerick/url "0.1.1"]
 
                 ; dev tools:
-                [cider/cider-nrepl "0.21.0"]
-                [refactor-nrepl "2.4.0"]]
+                [cider/cider-nrepl "0.24.0"]
+                [refactor-nrepl "2.5.0"]]
 
  :builds {:app {:target :browser
                 :output-dir "public/js"
