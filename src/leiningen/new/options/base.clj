@@ -5,6 +5,7 @@
   (->files
     data
 
+    ".clj-kondo/config.edn"
     "karma.conf.js"
     "README.md"
     "package.json"
