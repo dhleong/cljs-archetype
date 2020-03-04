@@ -4,8 +4,8 @@
  :source-paths ["src/main" "src/test"]
 
  :dependencies [; core:
-                [reagent "0.8.1"]
-                [re-frame "0.10.7"]
+                [reagent "0.9.1"]
+                [re-frame "0.11.0"]
 
                 ; navigation:
                 [clj-commons/secretary "1.2.4"]
