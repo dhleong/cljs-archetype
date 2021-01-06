@@ -1,5 +1,5 @@
 (ns {{ns-name}}.core
-  (:require [reagent.core :as reagent]
+  (:require [reagent.dom :as rdom]
             [re-frame.core :as re-frame]
             [{{ns-name}}.events :as events]
             [{{ns-name}}.routes :as routes]
@@ -9,8 +9,8 @@
 
 (defn ^:dev/after-load mount-root []
   (re-frame/clear-subscription-cache!)
-  (reagent/render [views/main]
-                  (.getElementById js/document "app")))
+  (rdom/render [views/main]
+               (.getElementById js/document "app")))
 
 (defn ^:export init []
   (re-frame/dispatch-sync [::events/initialize-db])
